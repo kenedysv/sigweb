@@ -92,7 +92,7 @@ fetchWFSMunicipioscomaltopotencialenergticosolar_3Data(lyr_Municipioscomaltopote
 });
 var lyr_PotencialEnergticoSolar_4 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mapa_potencial_cog",
@@ -112,7 +112,7 @@ var lyr_PotencialEnergticoSolar_4 = new ol.layer.Tile({
               wms_layers.push([lyr_PotencialEnergticoSolar_4, 0]);
 var lyr_reaoptasaimplantaodeenergiasolar_5 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mapa_aptidao_cog",
@@ -130,7 +130,7 @@ var lyr_reaoptasaimplantaodeenergiasolar_5 = new ol.layer.Tile({
               wms_layers.push([lyr_reaoptasaimplantaodeenergiasolar_5, 0]);
 var lyr_Restrioporcorpohdrico_6 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mask_agua_pi_cog",
@@ -149,7 +149,7 @@ var lyr_Restrioporcorpohdrico_6 = new ol.layer.Tile({
               wms_layers.push([lyr_Restrioporcorpohdrico_6, 0]);
 var lyr_Restrioporreadeconservao_7 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mask_conservacao_pi_cog",
@@ -168,7 +168,7 @@ var lyr_Restrioporreadeconservao_7 = new ol.layer.Tile({
               wms_layers.push([lyr_Restrioporreadeconservao_7, 0]);
 var lyr_Restrioporvegetaonatural_8 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mask_florestas_cog",
@@ -187,7 +187,7 @@ var lyr_Restrioporvegetaonatural_8 = new ol.layer.Tile({
               wms_layers.push([lyr_Restrioporvegetaonatural_8, 0]);
 var lyr_Restriopordeclividade_9 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mask_declividade_pi_cog",
@@ -206,7 +206,7 @@ var lyr_Restriopordeclividade_9 = new ol.layer.Tile({
               wms_layers.push([lyr_Restriopordeclividade_9, 0]);
 var lyr_Restrioreaurbana_10 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:mask_urbano_cog",
@@ -633,7 +633,7 @@ fetchWFSBiomasMAPBIOMAS_18Data(lyr_BiomasMAPBIOMAS_18.get('title'), function (er
 });
 var lyr_UsoeocupaodoSolo_19 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:uso_solo_pi_cog",
@@ -745,7 +745,7 @@ fetchWFSreasdeconservaoICMBio_20Data(lyr_reasdeconservaoICMBio_20.get('title'), 
 });
 var lyr_DeclividadeSRTM_21 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:declividade_piaui_cog",
@@ -824,7 +824,7 @@ fetchWFSRedeHidrogrficaANA_22Data(lyr_RedeHidrogrficaANA_22.get('title'), functi
 });
 var lyr_Precipitaoacumulada2025CHIRPS_23 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:Precipitacao_Anual_2025_CHIRPS_PI_cog",
@@ -850,7 +850,7 @@ var lyr_Precipitaoacumulada2025CHIRPS_23 = new ol.layer.Tile({
               wms_layers.push([lyr_Precipitaoacumulada2025CHIRPS_23, 0]);
 var lyr_IrradiaoSolarDiriaINPE_24 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:irradiacao_utm_cog",
@@ -876,7 +876,7 @@ var lyr_IrradiaoSolarDiriaINPE_24 = new ol.layer.Tile({
               wms_layers.push([lyr_IrradiaoSolarDiriaINPE_24, 0]);
 var lyr_Albedomdiaanual2025MODIS_25 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:albedo_reclassificado_normalizado_final_cog",
@@ -898,7 +898,7 @@ var lyr_Albedomdiaanual2025MODIS_25 = new ol.layer.Tile({
               wms_layers.push([lyr_Albedomdiaanual2025MODIS_25, 0]);
 var lyr_TemperaturaMdiaanual2025_26 = new ol.layer.Tile({
                             source: new ol.source.TileWMS(({
-                              url: "http://localhost:8080/geoserver/wms",
+                              url: "https://geoserver-sigweb.duckdns.org/geoserver/wms",
                               attributions: ' ',
                               params: {
                                 "LAYERS": "sigweb:Temperatura_Media_2025_ERA5_Piaui_cog",
@@ -1129,7 +1129,7 @@ var group_MapaBase = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'Mapa Base'});
 
-lyr_OSMStandard_0.setVisible(true);lyr_GoogleHybrid_1.setVisible(true);lyr_ESRITopo_2.setVisible(true);lyr_Municipioscomaltopotencialenergticosolar_3.setVisible(false);lyr_PotencialEnergticoSolar_4.setVisible(true);lyr_reaoptasaimplantaodeenergiasolar_5.setVisible(false);lyr_Restrioporcorpohdrico_6.setVisible(false);lyr_Restrioporreadeconservao_7.setVisible(false);lyr_Restrioporvegetaonatural_8.setVisible(false);lyr_Restriopordeclividade_9.setVisible(false);lyr_Restrioreaurbana_10.setVisible(false);lyr_Linhadetransmissoplanejado_11.setVisible(false);lyr_SubestaesExpansoPlanejada_12.setVisible(false);lyr_SubestaesBaseExistente_13.setVisible(false);lyr_Linhadetransmissaoexistente_14.setVisible(false);lyr_usinas_foto_editado_15.setVisible(true);lyr_CadastroAmbientalRuralCAR_16.setVisible(false);lyr_SistemadeGestoFundiriaSIGEF_17.setVisible(false);lyr_BiomasMAPBIOMAS_18.setVisible(false);lyr_UsoeocupaodoSolo_19.setVisible(false);lyr_reasdeconservaoICMBio_20.setVisible(false);lyr_DeclividadeSRTM_21.setVisible(false);lyr_RedeHidrogrficaANA_22.setVisible(false);lyr_Precipitaoacumulada2025CHIRPS_23.setVisible(false);lyr_IrradiaoSolarDiriaINPE_24.setVisible(false);lyr_Albedomdiaanual2025MODIS_25.setVisible(false);lyr_TemperaturaMdiaanual2025_26.setVisible(false);lyr_Piau_27.setVisible(true);lyr_MunicpiosPiau_28.setVisible(true);lyr_Brasil_29.setVisible(true);
+lyr_OSMStandard_0.setVisible(false);lyr_GoogleHybrid_1.setVisible(false);lyr_ESRITopo_2.setVisible(true);lyr_Municipioscomaltopotencialenergticosolar_3.setVisible(false);lyr_PotencialEnergticoSolar_4.setVisible(true);lyr_reaoptasaimplantaodeenergiasolar_5.setVisible(false);lyr_Restrioporcorpohdrico_6.setVisible(false);lyr_Restrioporreadeconservao_7.setVisible(false);lyr_Restrioporvegetaonatural_8.setVisible(false);lyr_Restriopordeclividade_9.setVisible(false);lyr_Restrioreaurbana_10.setVisible(false);lyr_Linhadetransmissoplanejado_11.setVisible(false);lyr_SubestaesExpansoPlanejada_12.setVisible(false);lyr_SubestaesBaseExistente_13.setVisible(false);lyr_Linhadetransmissaoexistente_14.setVisible(false);lyr_usinas_foto_editado_15.setVisible(true);lyr_CadastroAmbientalRuralCAR_16.setVisible(false);lyr_SistemadeGestoFundiriaSIGEF_17.setVisible(false);lyr_BiomasMAPBIOMAS_18.setVisible(false);lyr_UsoeocupaodoSolo_19.setVisible(false);lyr_reasdeconservaoICMBio_20.setVisible(false);lyr_DeclividadeSRTM_21.setVisible(false);lyr_RedeHidrogrficaANA_22.setVisible(false);lyr_Precipitaoacumulada2025CHIRPS_23.setVisible(false);lyr_IrradiaoSolarDiriaINPE_24.setVisible(false);lyr_Albedomdiaanual2025MODIS_25.setVisible(false);lyr_TemperaturaMdiaanual2025_26.setVisible(false);lyr_Piau_27.setVisible(true);lyr_MunicpiosPiau_28.setVisible(true);lyr_Brasil_29.setVisible(true);
 var layersList = [group_MapaBase,group_PotencialSolar,group_Mapasderestrio,group_Planejadas,group_Existentes,group_InfraestruturaEnergtica,group_Institucionais,group_Geogrficos,group_Clima,group_Limites];
 lyr_Municipioscomaltopotencialenergticosolar_3.set('fieldAliases', {'fid': 'fid', 'CD_MUN': 'CD_MUN', 'NM_MUN': 'NM_MUN', 'CD_RGI': 'CD_RGI', 'NM_RGI': 'NM_RGI', 'CD_RGINT': 'CD_RGINT', 'NM_RGINT': 'NM_RGINT', 'CD_UF': 'CD_UF', 'NM_UF': 'NM_UF', 'SIGLA_UF': 'SIGLA_UF', 'CD_REGIA': 'CD_REGIA', 'NM_REGIA': 'NM_REGIA', 'SIGLA_RG': 'SIGLA_RG', 'CD_CONCU': 'CD_CONCU', 'NM_CONCU': 'NM_CONCU', 'AREA_KM2': 'AREA_KM2', 'dens_demo': 'dens_demo', 'dens_2010': 'dens_2010', });
 lyr_Linhadetransmissoplanejado_11.set('fieldAliases', {'fid': 'fid', 'Nome': 'Nome', 'Ano_Planej': 'Ano_Planej', 'Tensao': 'Tensao', 'Extensao': 'Extensao', 'Concession': 'Concession', 'Shape_STLe': 'Shape_STLe', });
