@@ -227,13 +227,13 @@ var format_Linhadetransmissoplanejado_11 = new ol.format.GeoJSON();
 var jsonSource_Linhadetransmissoplanejado_11 = new ol.source.Vector({
     attributions: ' ',
 });
-var lyr_Linhadetransmissoplanejado_11 = new ol.layer.Vector({
+var lyr_Linhadetransmissoplanejado_11 = new ol.layer.Vector({ //simbologia invertida
                 declutter: false,
                 source:jsonSource_Linhadetransmissoplanejado_11, 
                 style: style_Linhadetransmissoplanejado_11,
                 popuplayertitle: 'Linha de transmissão planejado',
                 interactive: true,
-                title: '<img src="styles/legend/Linhadetransmissoplanejado_11.png" /> Linha de transmissão planejado'
+                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de transmissao existente'
             });
 
 fetchWFSLinhadetransmissoplanejado_11Data(lyr_Linhadetransmissoplanejado_11.get('title'), function (error, response) {
