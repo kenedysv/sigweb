@@ -401,7 +401,7 @@ var lyr_Linhadetransmissaoexistente_14 = new ol.layer.Vector({ // simbologia cor
                 style: style_Linhadetransmissaoexistente_14,
                 popuplayertitle: 'Linha de transmissao existente',
                 interactive: true,
-                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de transmissao existente'
+                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de Transmissao existente'
             });
 
 fetchWFSLinhadetransmissaoexistente_14Data(lyr_Linhadetransmissaoexistente_14.get('title'), function (error, response) {
