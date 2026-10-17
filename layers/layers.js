@@ -233,7 +233,7 @@ var lyr_Linhadetransmissoplanejado_11 = new ol.layer.Vector({ //simbologia cor V
                 style: style_Linhadetransmissoplanejado_11,
                 popuplayertitle: 'Linha de transmissão planejado',
                 interactive: true,
-                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de Transmissão Planejado'
+                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de Transmissao planejado'
             });
 
 fetchWFSLinhadetransmissoplanejado_11Data(lyr_Linhadetransmissoplanejado_11.get('title'), function (error, response) {
