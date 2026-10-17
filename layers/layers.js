@@ -227,7 +227,7 @@ var format_Linhadetransmissoplanejado_11 = new ol.format.GeoJSON();
 var jsonSource_Linhadetransmissoplanejado_11 = new ol.source.Vector({
     attributions: ' ',
 });
-var lyr_Linhadetransmissoplanejado_11 = new ol.layer.Vector({ //simbologia invertida
+var lyr_Linhadetransmissoplanejado_11 = new ol.layer.Vector({ //simbologia cor VERMELHA
                 declutter: false,
                 source:jsonSource_Linhadetransmissoplanejado_11, 
                 style: style_Linhadetransmissoplanejado_11,
@@ -395,13 +395,13 @@ var format_Linhadetransmissaoexistente_14 = new ol.format.GeoJSON();
 var jsonSource_Linhadetransmissaoexistente_14 = new ol.source.Vector({
     attributions: ' ',
 });
-var lyr_Linhadetransmissaoexistente_14 = new ol.layer.Vector({
+var lyr_Linhadetransmissaoexistente_14 = new ol.layer.Vector({ // simbologia cor AMARELA
                 declutter: false,
                 source:jsonSource_Linhadetransmissaoexistente_14, 
                 style: style_Linhadetransmissaoexistente_14,
                 popuplayertitle: 'Linha de transmissao existente',
                 interactive: true,
-                title: '<img src="styles/legend/Linhadetransmissaoexistente_14.png" /> Linha de transmissao existente'
+                title: '<img src="styles/legend/Linhadetransmissoplanejado_11.png" /> Linha de transmissão planejado'
             });
 
 fetchWFSLinhadetransmissaoexistente_14Data(lyr_Linhadetransmissaoexistente_14.get('title'), function (error, response) {
