@@ -1032,61 +1032,26 @@ fetchWFSMunicpiosPiau_28Data(lyr_MunicpiosPiau_28.get('title'), function (error,
         console.error("Error parsing WFS for MunicpiosPiau_28:", e);
     }
 });
+
+//Camada Brasil
 var format_Brasil_29 = new ol.format.GeoJSON();
 var jsonSource_Brasil_29 = new ol.source.Vector({
     attributions: ' ',
 });
-var lyr_Brasil_29 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Brasil_29, 
-                style: style_Brasil_29,
-                popuplayertitle: 'Brasil',
-                interactive: false,
-                title: '<img src="styles/legend/Brasil_29.png" /> Brasil'
-            });
-
-fetchWFSBrasil_29Data(lyr_Brasil_29.get('title'), function (error, response) {
-    var features_Brasil_29;
-    try {
-        if (typeof response === "object" && !response.nodeType) {
-            // Case JSONP/GeoJSON
-            features_Brasil_29 = format_Brasil_29.readFeatures(response);
-        } else {
-            // Case XML string o DOM
-            var parser = new DOMParser();
-            var xmlDoc = (typeof response === "string")
-                ? parser.parseFromString(response, "text/xml")
-                : response;
-
-            // Find GML version from tags
-            var gmlFormat;
-            if (xmlDoc.getElementsByTagName("gml:featureMember").length > 0) {
-                // GML2
-                gmlFormat = new ol.format.GML2();
-            } else if (xmlDoc.getElementsByTagName("gml:featureMembers").length > 0 ||
-                    xmlDoc.getElementsByTagName("gml:FeatureCollection").length > 0) {
-                // GML3
-                gmlFormat = new ol.format.GML3();
-            } else {
-                // Fallback generico
-                gmlFormat = new ol.format.WFS();
-            }
-
-            features_Brasil_29 = gmlFormat.readFeatures(xmlDoc, {
-                dataProjection: 'EPSG:3857',
-                featureProjection: map.getView().getProjection()
-            });
-        }
-
-        if (features_Brasil_29 && features_Brasil_29.length > 0) {
-            jsonSource_Brasil_29.addFeatures(features_Brasil_29);
-        } else {
-            lyr_Brasil_29.set('title', '<i class="fa-regular fa-triangle-exclamation" title="Parsing Error"></i> ' + lyr_Brasil_29.get('title'));
-            console.warn("No features loaded for Brasil_29");
-        }
-    } catch (e) {
-        console.error("Error parsing WFS for Brasil_29:", e);
-    }
+var lyr_Brasil_29 = new ol.layer.Tile({
+    title: '<img src="styles/legend/Brasil_29.png" /> Brasil',
+    opacity: 1.0,
+    visible: true,
+    source: new ol.source.TileWMS({
+        url: 'https://geoserver-sigweb.duckdns.org/geoserver/wms',
+        params: {
+            'LAYERS': 'Sigweb:Brasil',
+            'TILED': true,
+            'VERSION': '1.1.1',
+            'FORMAT': 'image/png'
+        },
+        serverType: 'geoserver'
+    })
 });
 var group_Limites = new ol.layer.Group({
                                 layers: [lyr_Piau_27,lyr_MunicpiosPiau_28,lyr_Brasil_29,],
