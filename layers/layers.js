@@ -1045,7 +1045,7 @@ var lyr_Brasil_29 = new ol.layer.Tile({
     source: new ol.source.TileWMS({
         url: 'https://geoserver-sigweb.duckdns.org/geoserver/wms',
         params: {
-            'LAYERS': 'Sigweb:Brasil',
+            'LAYERS': 'sigweb:Brasil',
             'TILED': true,
             'VERSION': '1.1.1',
             'FORMAT': 'image/png'
