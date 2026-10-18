@@ -1039,7 +1039,7 @@ var jsonSource_Brasil_29 = new ol.source.Vector({
     attributions: ' ',
 });
 var lyr_Brasil_29 = new ol.layer.Tile({
-    title: '<img src="styles/legend/Brasil_29.png" /> Brasil',
+    title: '<img src="styles/legend/Brasil_29.png" /> Brazil',
     opacity: 1.0,
     visible: true,
     source: new ol.source.TileWMS({
